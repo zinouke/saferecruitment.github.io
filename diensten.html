@@ -1,56 +1,111 @@
-**HTML (diensten.html):**
-```html
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safe Recruitment - Diensten</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Diensten - Safe Recruitment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+        .nav-link {
+            color: #333;
+        }
+        .content {
+            padding: 20px 0;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+        .dienst {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Safe Recruitment - Diensten</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="over-ons.html">Over Ons</a></li>
-                <li><a href="vacatures.html">Vacatures</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Safe Recruitment</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="over_ons.html">Over Ons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#diensten">Diensten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vacatures.html">Vacatures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div class="container">
+    <div id="diensten" class="container">
         <div class="content">
-            <h2>Onze Diensten</h2>
-            <p>
-                Bij Safe Recruitment streven we naar perfectie in het matchen van gekwalificeerde kandidaten met uw bedrijf. Ons team van ervaren professionals is toegewijd aan het leveren van hoogwaardige wervings- en selectiediensten, zodat u zich kunt concentreren op de groei en het succes van uw bedrijf.
-            </p>
-            <p>
-                Met Safe Recruitment bent u verzekerd van:
-            </p>
-            <ul>
-                <li>Kwaliteit en efficiëntie in al onze processen.</li>
-                <li>Maatwerkbenadering die perfect aansluit bij uw bedrijfsbehoeften.</li>
-                <li>Hooggekwalificeerde kandidaten die zorgvuldig zijn geselecteerd.</li>
-                <li>Snelle en betrouwbare service.</li>
-                <li>Continue ondersteuning gedurende het hele wervingsproces.</li>
-            </ul>
-            <p>
-                Onze diensten omvatten:
-            </p>
-            <ul>
-                <li><strong>Werving & selectie:</strong> We vinden de beste kandidaten die perfect aansluiten bij uw bedrijfsbehoeften.</li>
-                <li><strong>Executive Search:</strong> We bieden op maat gemaakte oplossingen voor het werven van leidinggevenden en directieleden.</li>
-                <li><strong>Interim-oplossingen:</strong> We bieden interim-professionals voor tijdelijke behoeften.</li>
-                <li><strong>Loopbaanbegeleiding:</strong> We begeleiden kandidaten bij het vinden van hun ideale baan.</li>
-                <li><strong>HR-adviesdiensten:</strong> We bieden deskundig advies over human resources.</li>
-            </ul>
+            <h2>Diensten</h2>
+            <div class="dienst">
+                <h3>Werving & Selectie</h3>
+                <p>Safe Recruitment helpt uw bedrijf bij het vinden van de beste kandidaten voor openstaande posities. Onze deskundige recruiters zoeken, screenen en selecteren kandidaten die perfect passen bij uw bedrijfscultuur en de eisen van de functie.</p>
+            </div>
+            <div class="dienst">
+                <h3>Headhunting</h3>
+                <p>Onze headhunters zijn gespecialiseerd in het identificeren en benaderen van getalenteerde professionals die niet actief op zoek zijn naar een nieuwe baan. Met ons uitgebreide netwerk en onze ervaring vinden we de juiste kandidaten voor uw bedrijf, zelfs als ze momenteel niet beschikbaar zijn op de arbeidsmarkt.</p>
+            </div>
+            <div class="dienst">
+                <h3>CV Screening</h3>
+                <p>Wij bieden CV-screeningdiensten aan om ervoor te zorgen dat u de meest geschikte kandidaten voor uw bedrijf in dienst neemt. Ons team van deskundige recruiters screent CV's zorgvuldig om ervoor te zorgen dat de kandidaten voldoen aan de vereisten van de functie en passen bij de bedrijfscultuur.</p>
+            </div>
+            <div class="dienst">
+                <h3>Assessment Centers</h3>
+                <p>Safe Recruitment organiseert assessment centers om de vaardigheden, competenties en geschiktheid van kandidaten voor specifieke functies te evalueren. Door middel van gestandaardiseerde tests, groepsdiscussies en rollenspellen kunnen we de beste kandidaten voor uw bedrijf selecteren.</p>
+            </div>
+            <div class="dienst">
+                <h3>Outplacement</h3>
+                <p>Als uw bedrijf te maken krijgt met reorganisatie of ontslagen, bieden wij outplacementdiensten aan om uw werknemers te ondersteunen bij het vinden van nieuw werk. We begeleiden uw werknemers bij elke stap van het proces, van het opstellen van een CV tot het voorbereiden van sollicitatiegesprekken.</p>
+            </div>
         </div>
     </div>
-    <footer>
-        <p>© 2024 Safe Recruitment - Werving & Selectie. Alle rechten voorbehouden.</p>
+    <footer class="container">
+        <div class="content">
+            <p>&copy; 2024 Safe Recruitment - Werving & Selectie</p>
+            <a href="privacybeleid.html">Privacybeleid</a> | <a href="algemene_voorwaarden.html">Algemene Voorwaarden</a>
+        </div>
     </footer>
 </body>
 </html>
-```
